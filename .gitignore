@@ -10,7 +10,7 @@ yarn-error.log*
 .env
 
 # Build output
-dist/
+# dist/ # Can't ignore dist because is the static folder for the app
 build/
 
 # OS generated files
@@ -30,3 +30,6 @@ coverage/
 # Optional: Package lock files if you use yarn
 package-lock.json
 yarn.lock
+
+# Local files
+roadmap.md

@@ -15,7 +15,8 @@ const requestLogger = (req, res, next) => {
   next();
 };
 
-app.use(requestLogger)
+// app.use(requestLogger)
+app.use(express.static('dist'))
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
